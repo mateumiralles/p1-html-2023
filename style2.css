@@ -1,10 +1,18 @@
+/* -------------- General Settings ---------------- */
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+@import url('https://css.gg/css');
+
 :root {
   --primary-yellow: #ffd93a;
   --secondary-purple: #b33aff;
   --background-color: #f4f4f3;
 }
 
+html{
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   background-color: var(--background-color);
@@ -13,7 +21,6 @@ body {
 body > div {
   display: flex;
   flex-direction: column;
-
   min-height: 100vh;
 }
 
@@ -23,7 +30,7 @@ body > div {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 90vh;
+  height: 80vh;
   width: 100%;
 }
 
@@ -49,11 +56,6 @@ body > div {
   margin: 0;
   font-size: 3.1rem;
 }
-#portrait a > div {
-  height: 100px;
-  width: 100px;
-  background-color: var(--secondary-purple);
-}
 
 .hr {
   width: 100%;
@@ -61,11 +63,36 @@ body > div {
   margin-bottom: 10px;
 }
 
+#portrait a > div {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#portrait a {
+  text-decoration: none;
+  color: black;
+}
+
+#portrait a:hover, #portrait a:hover i{
+  text-decoration: none;
+  color: var(--secondary-purple);
+  font-size: 10rem;
+}
+
+#portrait i{
+ font-size: 5rem;
+}
+
 /* -------------- Navigator ---------------- */
 #navigator {
   display: flex;
   flex-direction: row;
   width: 100%;
+  padding-top: 80px;
+  background-color: var(--primary-yellow);
 }
 
 #navigator > div {
