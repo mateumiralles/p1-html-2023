@@ -87,7 +87,7 @@ h3{
 
 #portrait a:hover i {
   text-decoration: none;
-  color: white;
+  color: var(--secondary-purple);
   font-size: 10rem;
 }
 
@@ -104,7 +104,7 @@ h3{
   box-shadow: 0 0 15px #888;
 }
 
-#navigator > div > div{
+#navigator > div > a{
   flex: 1;
   height: 40px;
   background-color: lightgray;
@@ -115,13 +115,13 @@ h3{
   justify-content: center;
 }
 
-#navigator > div > div:hover {
+#navigator > div > a:hover {
   flex: 2;
   background-color: var(--secondary-purple);
 }
-#navigator > div >div:hover a {
+#navigator > div >a:hover {
   font-weight: bold;
-  color: #f4f4f3;
+  color: var(--background-color);
 }
 
 #navigator a {
@@ -148,3 +148,6 @@ h3{
   align-items: center;
   padding: 0 20px;
 }
+
+
+/* -------------- Educación ---------------- */
