@@ -7,6 +7,7 @@
 :root {
   --primary-yellow: #ffd93a;
   --secondary-blue: #171738;
+  --aux-blue: #1f1f48;
   --background-color: #f6f8ff;
   --aux-gray: #e6e7ed;
   --gen-shadow: 0 0 10px #888;
@@ -38,7 +39,7 @@ h3 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 80vh;
+  height: 90vh;
   width: 100%;
 }
 
@@ -99,9 +100,14 @@ h3 {
 /* -------------- Navigator ---------------- */
 #navigator {
   width: 100%;
-  padding-top: 80px;
+
   background-color: var(--primary-yellow);
+
+  position: sticky;
+  top: 0px;
 }
+
+
 
 #navigator > div {
   display: flex;
@@ -155,7 +161,7 @@ h3 {
   flex-direction: column;
   align-items: center;
   border-radius: 25px;
-  transition: all 1s ease;
+  transition: all 0.7s ease;
 }
 
 #presentation > div:hover {
@@ -181,6 +187,7 @@ h3 {
 /* -------------- Educación ---------------- */
 
 #education {
+  padding-top: 20px;
   width: 100%;
   background-color: white;
 
@@ -189,17 +196,10 @@ h3 {
   align-items: center;
 }
 
-#education > div:first-child {
-  width: 100%;
-}
 
-#education hr {
-  margin: 0;
-  border-top: 1px solid var(--aux-gray);
-  box-shadow: var(--gen-shadow);
-}
 
 #education h3 {
+  margin-top: 50px;
   color: var(--secondary-blue);
 }
 
@@ -265,6 +265,16 @@ h3 {
   justify-content: space-evenly;
 }
 
+#hard-skills > div > div{
+  padding: 20px;
+  border-radius: 25px;
+  transition: all .5s ease;;
+}
+#hard-skills > div > div:hover{
+  background-color: var(--aux-blue);
+  font-size: 2rem;
+}
+
 #hard-skills div > h4 {
   font-size: 2rem;
   color: var(--primary-yellow);
@@ -292,3 +302,6 @@ h3 {
   color: var(--primary-yellow);
   font-size: 1rem;
 }
+
+
+/* -------------- SOFT-SKILLS ---------------- */
