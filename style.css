@@ -126,7 +126,7 @@ h3 {
 }
 #navigator > div > a:hover {
   font-weight: bold;
-  color: var(--background-color);
+  color: var(--primary-yellow);
 }
 
 #navigator a {
@@ -154,6 +154,22 @@ h3 {
   flex-direction: column;
   align-items: center;
   border-radius: 25px;
+  transition: all 1s ease;
+}
+
+#presentation > div:hover {
+  width: 70%;
+  padding: 150px; 
+  background-color: var(--secondary-blue);
+  text-transform: uppercase;
+}
+
+#presentation > div:hover h3{
+  color: var(--primary-yellow);
+}
+
+#presentation > div:hover p{
+  color: var(--background-color);
 }
 
 #presentation > div p {
@@ -183,7 +199,7 @@ h3 {
 }
 
 #education h3 {
-  color: var(--primary-yellow);
+  color: var(--secondary-blue);
 }
 
 #education > div {
@@ -199,24 +215,79 @@ h3 {
   margin: 50px 0;
 }
 
-#education .edu-cards > div{
+#education .edu-cards > div {
   background-color: var(--background-color);
   padding: 20px;
   margin: 0 20px;
   border-radius: 25px;
-  flex: 1;
-  transition: all .3s ease;
-}
-
-#education .edu-cards > div:hover{
-  background-color: var(--secondary-blue);
-
-  color: var(--background-color);
   flex: 2;
+  transition: all 0.3s ease;
 }
 
-#education   h4 {
-  font-size: 1.5rem;
+#education .edu-cards > div:hover {
+  background-color: var(--secondary-blue);
+  color: var(--background-color);
+  flex: 3;
+}
+
+#education .edu-cards > div:hover > h4 {
+  Color: var(--primary-yellow);
+}
+
+#education h4 {
+  font-size: 1.3rem;
   margin: 0;
 }
 
+/* -------------- HARD SKILLS ---------------- */
+
+#hard-skills {
+  background-color: var(--secondary-blue);
+  width: 100%;
+  padding-bottom: 140px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#hard-skills h3 {
+  color: var(--primary-yellow);
+  margin-top: 100px;
+  margin-bottom: 140px;
+}
+
+#hard-skills > div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+#hard-skills div > h4 {
+  font-size: 2rem;
+  color: var(--primary-yellow);
+  margin: 0;
+}
+
+#hard-skills > div > div > div {
+  padding-left: 10px;
+}
+
+#hard-skills > div li::marker {
+  color: var(--primary-yellow);
+}
+#hard-skills > div li,
+#hard-skills > div p {
+  color: var(--background-color);
+  font-size: 1.4rem;
+}
+
+#hard-skills > div p {
+  padding-left: 15px;
+}
+
+#hard-skills span {
+  color: var(--primary-yellow);
+  font-size: 1rem;
+}
